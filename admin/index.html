@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../assets/style/base.css">
   <link rel="stylesheet" href="../assets/style/dashboard.css">
   <link rel="stylesheet" href="../assets/style/admin.css">
-  <link rel="stylesheet" href="../assets/style/visitor.css">
+  <link rel="stylesheet" href="../assets/style/visitorr.css">
 
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script defer src="../assets/script/auth.js"></script>
@@ -33,8 +33,8 @@
   <script defer src="../assets/script/admin-billing.js"></script>
   <script defer src="../assets/script/admin-staff.js"></script>
   <script defer src="../assets/script/admin-profile.js"></script>
+  <script defer src="../assets/script/admin-visitor.js"></script>
   <script defer src="../assets/script/admin.js"></script>
- <script defer src="../assets/script/visitor.js"></script>
  
 </head>
 <body class="dashboard-body">
@@ -44,6 +44,7 @@
       <i class="fa-solid fa-building" aria-hidden="true"></i>
       <span>Hostel Admin</span>
     </div>
+
 
     <nav class="sidebar__nav">
       <div class="sidebar__section">
@@ -70,44 +71,10 @@
         <a class="sidebar__nav-item" href="#/billing" data-route="/billing">
           <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i><span>Billings &amp; Payment</span>
         </a>
+        <a class="sidebar__nav-item" href="#/visitor-management" data-route="/visitor-management">
+     <i class="fa-solid fa-user-group" aria-hidden="true"></i><span>Visitor Management</span>
+        </a>
       </div>
-      <section class="new-service" id="visitor-management">
-  <div class="container">
-    <h2 class="section-heading">Visitor Management</h2>
-    <p class="section-subheading">
-      Register hostel visitors and track their check-in status.
-    </p>
-
-    <form id="visitorForm" class="service-form">
-      <label for="visitorName">Visitor Name</label>
-      <input id="visitorName" type="text" required>
-
-      <label for="visitorPhone">Contact Number</label>
-      <input id="visitorPhone" type="tel" required>
-
-      <label for="visitStudent">Student to Visit</label>
-      <input id="visitStudent" type="text" required>
-
-      <label for="visitorRoom">Room Number</label>
-      <input id="visitorRoom" type="text" required>
-
-      <label for="visitPurpose">Purpose of Visit</label>
-      <textarea id="visitPurpose" required></textarea>
-
-      <label for="visitDate">Visit Date</label>
-      <input id="visitDate" type="date" required>
-
-      <label for="visitTime">Entry Time</label>
-      <input id="visitTime" type="time" required>
-
-      <button class="btn btn-primary" type="submit">
-        Register Visitor
-      </button>
-    </form>
-
-    <div id="visitorResults" class="service-results"></div>
-  </div>
-</section>
 
       <div class="sidebar__section">
         <div class="sidebar__section-title">People</div>
